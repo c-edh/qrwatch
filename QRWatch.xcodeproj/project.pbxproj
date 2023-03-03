@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F44106D529AE51BE007D415D /* QRWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F44106D429AE51BE007D415D /* QRWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F44106DA29AE51BE007D415D /* QRWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44106D929AE51BE007D415D /* QRWatchApp.swift */; };
+		F44106DC29AE51BE007D415D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44106DB29AE51BE007D415D /* ContentView.swift */; };
+		F44106DE29AE51C0007D415D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44106DD29AE51C0007D415D /* Assets.xcassets */; };
+		F44106E129AE51C0007D415D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44106E029AE51C0007D415D /* Preview Assets.xcassets */; };
+		F44106EC29AE528F007D415D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44106EB29AE528F007D415D /* ViewModel.swift */; };
+		F498DB9529B2424D004247F2 /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498DB9429B2424D004247F2 /* BookingModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F44106D629AE51BE007D415D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44106C829AE51BE007D415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44106D329AE51BE007D415D;
+			remoteInfo = "QRWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F44106E729AE51C0007D415D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F44106D529AE51BE007D415D /* QRWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F44106CE29AE51BE007D415D /* QRWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44106D429AE51BE007D415D /* QRWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44106D929AE51BE007D415D /* QRWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRWatchApp.swift; sourceTree = "<group>"; };
+		F44106DB29AE51BE007D415D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F44106DD29AE51C0007D415D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F44106E029AE51C0007D415D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F44106EB29AE528F007D415D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F498DB9429B2424D004247F2 /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F44106D129AE51BE007D415D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F44106C729AE51BE007D415D = {
+			isa = PBXGroup;
+			children = (
+				F44106D829AE51BE007D415D /* QRWatch Watch App */,
+				F44106CF29AE51BE007D415D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F44106CF29AE51BE007D415D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F44106CE29AE51BE007D415D /* QRWatch.app */,
+				F44106D429AE51BE007D415D /* QRWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F44106D829AE51BE007D415D /* QRWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				F44106D929AE51BE007D415D /* QRWatchApp.swift */,
+				F44106DB29AE51BE007D415D /* ContentView.swift */,
+				F498DB9429B2424D004247F2 /* BookingModel.swift */,
+				F44106EB29AE528F007D415D /* ViewModel.swift */,
+				F44106DD29AE51C0007D415D /* Assets.xcassets */,
+				F44106DF29AE51C0007D415D /* Preview Content */,
+			);
+			path = "QRWatch Watch App";
+			sourceTree = "<group>";
+		};
+		F44106DF29AE51C0007D415D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F44106E029AE51C0007D415D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F44106CD29AE51BE007D415D /* QRWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44106E829AE51C0007D415D /* Build configuration list for PBXNativeTarget "QRWatch" */;
+			buildPhases = (
+				F44106CC29AE51BE007D415D /* Resources */,
+				F44106E729AE51C0007D415D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44106D729AE51BE007D415D /* PBXTargetDependency */,
+			);
+			name = QRWatch;
+			productName = QRWatch;
+			productReference = F44106CE29AE51BE007D415D /* QRWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		F44106D329AE51BE007D415D /* QRWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44106E429AE51C0007D415D /* Build configuration list for PBXNativeTarget "QRWatch Watch App" */;
+			buildPhases = (
+				F44106D029AE51BE007D415D /* Sources */,
+				F44106D129AE51BE007D415D /* Frameworks */,
+				F44106D229AE51BE007D415D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QRWatch Watch App";
+			productName = "QRWatch Watch App";
+			productReference = F44106D429AE51BE007D415D /* QRWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F44106C829AE51BE007D415D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F44106CD29AE51BE007D415D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F44106D329AE51BE007D415D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = F44106CB29AE51BE007D415D /* Build configuration list for PBXProject "QRWatch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F44106C729AE51BE007D415D;
+			productRefGroup = F44106CF29AE51BE007D415D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F44106CD29AE51BE007D415D /* QRWatch */,
+				F44106D329AE51BE007D415D /* QRWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F44106CC29AE51BE007D415D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44106D229AE51BE007D415D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44106E129AE51C0007D415D /* Preview Assets.xcassets in Resources */,
+				F44106DE29AE51C0007D415D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F44106D029AE51BE007D415D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44106DC29AE51BE007D415D /* ContentView.swift in Sources */,
+				F44106EC29AE528F007D415D /* ViewModel.swift in Sources */,
+				F44106DA29AE51BE007D415D /* QRWatchApp.swift in Sources */,
+				F498DB9529B2424D004247F2 /* BookingModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F44106D729AE51BE007D415D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44106D329AE51BE007D415D /* QRWatch Watch App */;
+			targetProxy = F44106D629AE51BE007D415D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F44106E229AE51C0007D415D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F44106E329AE51C0007D415D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F44106E529AE51C0007D415D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QRWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 8CD56KSUZ7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = QRWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coreye.QRWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		F44106E629AE51C0007D415D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QRWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 8CD56KSUZ7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = QRWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coreye.QRWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		F44106E929AE51C0007D415D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CD56KSUZ7;
+				INFOPLIST_KEY_CFBundleDisplayName = QRWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coreye.QRWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F44106EA29AE51C0007D415D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8CD56KSUZ7;
+				INFOPLIST_KEY_CFBundleDisplayName = QRWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coreye.QRWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F44106CB29AE51BE007D415D /* Build configuration list for PBXProject "QRWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44106E229AE51C0007D415D /* Debug */,
+				F44106E329AE51C0007D415D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44106E429AE51C0007D415D /* Build configuration list for PBXNativeTarget "QRWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44106E529AE51C0007D415D /* Debug */,
+				F44106E629AE51C0007D415D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44106E829AE51C0007D415D /* Build configuration list for PBXNativeTarget "QRWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44106E929AE51C0007D415D /* Debug */,
+				F44106EA29AE51C0007D415D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F44106C829AE51BE007D415D /* Project object */;
+}
