@@ -10,12 +10,44 @@ import Foundation
 
 class ViewModel: ObservableObject{
 
+    @Published var currentBookings: [BookingModel] = []
+     @Published var pastBookings: [BookingModel] = []
+    
+    func getBookingHistory(){
+        var current: [BookingModel] = []
+        var past: [BookingModel] = []
+        
+        for booking in getBookings(){
+           if  (booking.date + (booking.duaration*3600)) >= Date(){
+               current.append(booking)
+                
+           }else{
+               past.append(booking)
+           }
+        }
+        DispatchQueue.main.async {
+            self.currentBookings = current
+            self.pastBookings = past
+        }
+
+        print(pastBookings)
+        
+    
+    }
     
     func getBookings() -> [BookingModel]{
         return [.init(date: Date(), place: "Turlock", duaration: 3.0),
                 .init(date: Date() - 3600, place: "Modesto", duaration: 0.5),
                 .init(date: Date() - 36_000_000, place: "SF", duaration: 4)]
         
+    }
+    
+    func getParkTime(timeOfParking: Date) -> String{
+        let endTime = timeOfParking
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM d, h:mm a"
+        let parktime = dateFormatter.string(from: endTime)
+        return parktime
     }
     
     func getParkEndHour(timeOfParking: Date, duration: Double) -> String{
@@ -35,10 +67,6 @@ class ViewModel: ObservableObject{
        // print(stringTime)
         return stringTime ?? "n/a"
     }
-    
-    
-    
-    
 }
 
 

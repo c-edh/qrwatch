@@ -6,21 +6,24 @@
 //
 
 import SwiftUI
-import MapKit
 
 struct ContentView: View {
-        @StateObject var viewModel = ViewModel()
+    @StateObject var viewModel = ViewModel()
     var body: some View {
         NavigationStack{
             VStack{
                 HStack{
-                    Image(systemName: "photo.fill")
-                    Text("ParkRoll").frame(maxWidth: .infinity,alignment: .trailing).foregroundColor(.green)
-                }
+                    Image("logo").resizable().frame(width: 20,height: 20).cornerRadius(6)
+                    Text("ParkRoll")
+                        .foregroundColor(.green)
+                }.frame(maxWidth: .infinity,alignment: .leading)
                 
                 ScrollView{
-                    
-                    Text("\(viewModel.getTimeRemaining(timeOfParking: viewModel.getBookings()[0].date, duration: viewModel.getBookings()[0].duaration))\n hours left").frame(maxWidth: .infinity,alignment: .leading).font(.title)
+                    HStack{
+                        Text("Remaining:").scaledToFit().minimumScaleFactor(0.5)
+                        Text(" \(viewModel.getTimeRemaining(timeOfParking: viewModel.getBookings()[0].date, duration: viewModel.getBookings()[0].duaration))")
+                            .frame(maxWidth: .infinity,alignment: .trailing).font(.title)
+                    }
                     
                     NavigationLink {
                         Text("QR Code") //Placeholder
@@ -29,7 +32,7 @@ struct ContentView: View {
                     }
                     
                     NavigationLink {
-                        Bookings()
+                        BookingListView()
                     } label: {
                         Text("Bookings")
                     }
@@ -45,56 +48,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct Bookings: View {
-    @StateObject var viewModel = ViewModel()
-    var body: some View {
-        
-        List(viewModel.getBookings()){ booking in
-            if (booking.date + (booking.duaration*3600)) >= Date(){
-                Section("Current Parking") {
-                    NavigationLink {
-                        SpotView(booking: booking)
-                    } label: {
-                        HStack{
-                            Text(booking.place)
-                        }
-                    }
-                }
-                
-            }else{
-                
-                Section("Past Parking") {
-                    NavigationLink {
-                        SpotView(booking: booking)
-                    } label: {
-                        Text(booking.place)
-                    }
-                    
-                }
-            }
-        }
-    }
-}
-
-struct SpotView: View {
-    @State var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 37.334_900, longitude: -122.009_020),
-        latitudinalMeters: 750,
-        longitudinalMeters: 750
-    )
-    let booking: BookingModel
-    @StateObject var viewModel = ViewModel()
-    
-    var body: some View {
-        VStack{
-            VStack{
-                Text("Parking at \(booking.place)")
-                    .frame(maxWidth: .infinity,alignment: .leading)
-                
-                Text("Until: \(viewModel.getParkEndHour(timeOfParking: booking.date, duration: booking.duaration))")
-                    .frame(maxWidth: .infinity,alignment: .trailing)
-            }
-            Map(coordinateRegion: $region,interactionModes: .zoom)
-        }
-    }
-}

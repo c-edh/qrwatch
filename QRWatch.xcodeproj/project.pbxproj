@@ -14,6 +14,7 @@
 		F44106E129AE51C0007D415D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44106E029AE51C0007D415D /* Preview Assets.xcassets */; };
 		F44106EC29AE528F007D415D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44106EB29AE528F007D415D /* ViewModel.swift */; };
 		F498DB9529B2424D004247F2 /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498DB9429B2424D004247F2 /* BookingModel.swift */; };
+		F498DB9729B25F8F004247F2 /* BookingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498DB9629B25F8F004247F2 /* BookingListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F44106E029AE51C0007D415D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F44106EB29AE528F007D415D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		F498DB9429B2424D004247F2 /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
+		F498DB9629B25F8F004247F2 /* BookingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F44106DB29AE51BE007D415D /* ContentView.swift */,
 				F498DB9429B2424D004247F2 /* BookingModel.swift */,
 				F44106EB29AE528F007D415D /* ViewModel.swift */,
+				F498DB9629B25F8F004247F2 /* BookingListView.swift */,
 				F44106DD29AE51C0007D415D /* Assets.xcassets */,
 				F44106DF29AE51C0007D415D /* Preview Content */,
 			);
@@ -202,6 +205,7 @@
 				F44106EC29AE528F007D415D /* ViewModel.swift in Sources */,
 				F44106DA29AE51BE007D415D /* QRWatchApp.swift in Sources */,
 				F498DB9529B2424D004247F2 /* BookingModel.swift in Sources */,
+				F498DB9729B25F8F004247F2 /* BookingListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
