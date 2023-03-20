@@ -8,14 +8,17 @@
 import SwiftUI
 import MapKit
 
-struct BookingListView: View {
-    @StateObject var viewModel = ViewModel()
+struct BookingListView<Model>: View where Model: ViewModelProtocol {
+    @StateObject var viewModel: Model
     
     var body: some View {
         
         List{
+            
+            //
             if !viewModel.currentBookings.isEmpty{
                 Section("Upcoming Parking") {
+                    //
                     ForEach(viewModel.currentBookings) { booking in
                         NavigationLink {
                             UpComingSpotView(booking: booking)
@@ -60,7 +63,7 @@ struct BookingListView: View {
                                         
                                         Text(booking.place).frame(maxWidth: .infinity,alignment:.trailing)
                                         VStack{
-                                            Text(viewModel.getParkEndHour(timeOfParking: booking.date, duration: 0))
+                                            Text(viewModel.getParkTime(timeOfParking: booking.date))
                                                 .scaledToFit().minimumScaleFactor(0.5).frame(maxWidth: .infinity,alignment:.trailing)
                                             
                                             Text("\(booking.duaration,specifier: "%.1f") hours").scaledToFit().minimumScaleFactor(0.5).frame(maxWidth: .infinity,alignment:.trailing)
@@ -98,18 +101,27 @@ struct UpComingSpotView: View {
                     Image("city").resizable().frame(maxHeight: .infinity).scaledToFit().opacity(0.3).clipShape(RoundedRectangle(cornerRadius: 16))
                     VStack{
                         HStack{
-                            Image("logo").resizable().frame(maxWidth: .infinity).scaledToFit().cornerRadius(16)
-                            Text("ParkRoll").font(.title).foregroundColor(.green).minimumScaleFactor(0.5)
-                        }
-                        Text("\(viewModel.getParkEndHour(timeOfParking: booking.date, duration:0)) to  \(viewModel.getParkEndHour(timeOfParking: booking.date, duration: booking.duaration))").scaledToFit().minimumScaleFactor(0.5)
-                        Text("Where \(booking.place)").frame(alignment: .trailing)
-                    }.frame(maxWidth: .infinity,alignment: .trailing).frame(height: 100)
+                            Image("logo").resizable().scaledToFit().frame(height: 30).cornerRadius(5)
+                            Text("ParkRoll").foregroundColor(.green).minimumScaleFactor(0.5)
+                        }.frame(maxWidth: .infinity)
+                        
+                      //  Text("\(viewModel.getParkTime(timeOfParking: booking.date))") .frame(maxWidth: .infinity).scaledToFit().minimumScaleFactor(0.5)
+                        
+                        Text("to").font(.system(size: 10))
+                        
+                       // Text("\(viewModel.getParkTime(timeOfParking: booking.date + (booking.duaration * 3600)))").frame(maxWidth: .infinity).scaledToFit().minimumScaleFactor(0.5)
+                        
+                       
+                        
+                    }.frame(maxWidth: .infinity,alignment: .trailing)
                     
                 }
                 Spacer().frame(height: 50)
                 
                 Image("QRcode").resizable().frame(width: 200, height: 200)
                 Spacer().frame(height: 50)
+                
+                Text("Where \(booking.place)").frame(maxWidth: .infinity, alignment: .leading).scaledToFit().minimumScaleFactor(0.5)
                 
                 Map(coordinateRegion: $region,interactionModes: .zoom).frame(width: 200,height: 100)
             }

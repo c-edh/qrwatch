@@ -21,8 +21,8 @@ struct ContentView: View {
                 ScrollView{
                     HStack{
                         Text("Remaining:").scaledToFit().minimumScaleFactor(0.5)
-                        Text(" \(viewModel.getTimeRemaining(timeOfParking: viewModel.getBookings()[0].date, duration: viewModel.getBookings()[0].duaration))")
-                            .frame(maxWidth: .infinity,alignment: .trailing).font(.title)
+//                        Text(" \(viewModel.getTimeRemaining(timeOfParking: viewModel.getBookings()[0].date, duration: viewModel.getBookings()[0].duaration))")
+//                            .frame(maxWidth: .infinity,alignment: .trailing).font(.title)
                     }
                     
                     NavigationLink {
